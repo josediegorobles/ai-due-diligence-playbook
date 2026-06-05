@@ -1,0 +1,116 @@
+# AI Due Diligence Playbook
+
+Practical checklists, templates, and review frameworks for evaluating AI systems before deployment, acquisition, or investment.
+
+This repository is for people who need to make real decisions about AI systems: CTOs, founders, investors, engineering leaders, security teams, and diligence advisors. It is intentionally opinionated. It favors evidence over demos, failure modes over vendor claims, and operational readiness over AI hype.
+
+## What This Is
+
+AI due diligence is the process of deciding whether an AI system is safe, secure, maintainable, compliant, commercially defensible, and fit for deployment.
+
+Use this playbook when you are:
+
+- approving an AI product for production
+- buying or investing in an AI company
+- reviewing an LLM, RAG, agent, or ML system
+- assessing an AI vendor
+- preparing for board, security, compliance, or investment review
+- deciding whether an AI system should be rebuilt, restricted, monitored, or killed
+
+## What This Is Not
+
+This is not a collection of abstract AI ethics principles. It is not a prompt engineering guide. It is not a model leaderboard. It is not a legal opinion.
+
+The default question here is simple:
+
+> What evidence proves this AI system is ready for the risk it creates?
+
+## Repository Structure
+
+```text
+checklists/
+  ai-project-risk-assessment.md
+  llm-application-review-checklist.md
+  rag-system-review-checklist.md
+  ai-governance-checklist.md
+  ai-act-readiness-checklist.md
+  ai-security-review-checklist.md
+
+templates/
+  ai-vendor-evaluation-template.md
+  ai-technical-due-diligence-report-template.md
+
+frameworks/
+  ai-due-diligence-risk-model.md
+
+examples/
+  example-risk-register.md
+
+case-studies/
+  acquisition-review-llm-support-tool.md
+```
+
+## Core Artifacts
+
+| Artifact | Use it when |
+| --- | --- |
+| [AI Project Risk Assessment](checklists/ai-project-risk-assessment.md) | You need to decide if an AI initiative should proceed, pause, or be redesigned. |
+| [LLM Application Review Checklist](checklists/llm-application-review-checklist.md) | You are reviewing an LLM-powered product, internal tool, copilot, or workflow. |
+| [RAG System Review Checklist](checklists/rag-system-review-checklist.md) | You are evaluating retrieval quality, source control, answer grounding, and data leakage risk. |
+| [AI Vendor Evaluation Template](templates/ai-vendor-evaluation-template.md) | You are assessing a third-party AI vendor before purchase, partnership, or investment. |
+| [AI Technical Due Diligence Report Template](templates/ai-technical-due-diligence-report-template.md) | You need a senior-level diligence report format for acquisition or investment review. |
+| [AI Governance Checklist](checklists/ai-governance-checklist.md) | You need operating controls around ownership, policy, monitoring, escalation, and auditability. |
+| [AI Act Readiness Checklist](checklists/ai-act-readiness-checklist.md) | You need a practical EU AI Act readiness review. Verify legal interpretation with counsel. |
+| [AI Security Review Checklist](checklists/ai-security-review-checklist.md) | You are threat-modeling AI-specific abuse, data exposure, supply chain, and runtime risk. |
+
+## Review Philosophy
+
+Strong AI systems have boring evidence.
+
+They have owners, logs, evals, incident paths, rollback plans, vendor terms, data lineage, test sets, monitoring, and known limits. Weak AI systems have screenshots, claims, demos, and vibes.
+
+This playbook assumes:
+
+- production AI is software plus statistical behavior plus governance
+- demos are not evidence
+- benchmarks are not product validation
+- RAG is not automatically grounded
+- a model wrapper is not a moat
+- vendor SOC 2 is not AI diligence
+- human-in-the-loop is not a control unless humans can realistically detect and correct failures
+- accuracy without failure-mode analysis is not enough
+- compliance posture must be mapped to actual system behavior
+
+## Suggested Review Outcomes
+
+Every review should end with one of these decisions:
+
+- **Approve**: evidence is sufficient for the current risk class.
+- **Approve with controls**: proceed only with specified mitigations, monitoring, and owner sign-off.
+- **Pilot only**: restrict users, data, scope, or automation level until evidence improves.
+- **Block**: unacceptable risk, missing evidence, or unresolved critical findings.
+- **Divest / do not acquire**: diligence findings undermine the asset, valuation, or integration plan.
+
+## Risk Rating
+
+Use the [AI Due Diligence Risk Model](frameworks/ai-due-diligence-risk-model.md) to rate each system across:
+
+- business criticality
+- user and societal impact
+- autonomy level
+- data sensitivity
+- security exposure
+- regulatory exposure
+- model and vendor dependency
+- observability and reversibility
+
+## Contributing
+
+Contributions are welcome if they make the repository more useful to practitioners. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Good contributions are specific, testable, and grounded in real review work. Weak contributions are generic principles, vendor marketing, or AI hype in a blazer.
+
+## License
+
+MIT. Use it, fork it, adapt it, and improve it.
+
