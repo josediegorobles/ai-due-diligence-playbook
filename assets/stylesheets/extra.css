@@ -1,0 +1,18 @@
+:root {
+  --jr-card-border: rgba(15, 118, 110, 0.22);
+}
+
+.md-typeset .lead {
+  font-size: 1.18rem;
+  line-height: 1.6;
+}
+
+.md-typeset .grid.cards > ul > li {
+  border-color: var(--jr-card-border);
+  border-radius: 8px;
+}
+
+.md-typeset .ai-act-map td:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+}
