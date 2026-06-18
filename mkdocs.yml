@@ -1,0 +1,123 @@
+site_name: AI Due Diligence Playbook
+site_description: Practical AI due diligence, AI governance, and EU AI Act readiness checklists for SMEs, CTOs, investors, and technical review teams.
+site_url: https://josediegorobles.github.io/ai-due-diligence-playbook/
+repo_url: https://github.com/josediegorobles/ai-due-diligence-playbook
+repo_name: josediegorobles/ai-due-diligence-playbook
+edit_uri: edit/main/docs/
+exclude_docs: |
+  _includes/*
+
+theme:
+  name: material
+  language: en
+  favicon: assets/favicon.svg
+  logo: assets/favicon.svg
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - social:
+      enabled: !ENV [CI, false]
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          site_name: AI Due Diligence Playbook
+          nav_translations:
+            Home: Inicio
+            For SMEs / Para PYMEs: Para PYMEs
+            For CTOs: Para CTOs
+            For Investors: Para inversores
+            AI Act Compliance: Cumplimiento AI Act
+            AI Act Spine: Guía AI Act
+            Checklists: Listas de control
+            Templates: Plantillas
+            Frameworks: Marcos
+            Examples: Ejemplos
+            Case Studies: Casos
+
+nav:
+  - Home: index.md
+  - For SMEs / Para PYMEs: smes/index.md
+  - For CTOs: ctos/index.md
+  - For Investors: investors/index.md
+  - AI Act Compliance:
+      - AI Act Spine: ai-act/index.md
+      - AI Act Readiness Checklist: checklists/ai-act-readiness-checklist.md
+      - AI Governance Checklist: checklists/ai-governance-checklist.md
+      - AI Project Risk Assessment: checklists/ai-project-risk-assessment.md
+  - Checklists:
+      - AI Project Risk Assessment: checklists/ai-project-risk-assessment.md
+      - LLM Application Review Checklist: checklists/llm-application-review-checklist.md
+      - RAG System Review Checklist: checklists/rag-system-review-checklist.md
+      - AI Governance Checklist: checklists/ai-governance-checklist.md
+      - AI Act Readiness Checklist: checklists/ai-act-readiness-checklist.md
+      - AI Security Review Checklist: checklists/ai-security-review-checklist.md
+  - Templates:
+      - AI Vendor Evaluation Template: template-library/ai-vendor-evaluation-template.md
+      - AI Technical Due Diligence Report Template: template-library/ai-technical-due-diligence-report-template.md
+  - Frameworks:
+      - AI Due Diligence Risk Model: frameworks/ai-due-diligence-risk-model.md
+  - Examples:
+      - Example Risk Register: examples/example-risk-register.md
+  - Case Studies:
+      - Acquisition Review of an LLM Support Tool: case-studies/acquisition-review-llm-support-tool.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/josediegorobles
+      name: Jose Robles on GitHub
+    - icon: fontawesome/solid/calendar-check
+      link: https://calendly.com/jd-robles
+      name: Book a 30-min intro call
+
+extra_css:
+  - assets/stylesheets/extra.css

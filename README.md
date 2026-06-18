@@ -2,6 +2,12 @@
 
 Practical checklists, templates, and review frameworks for evaluating AI systems before deployment, acquisition, or investment.
 
+## Public Site
+
+Browse the web version: https://josediegorobles.github.io/ai-due-diligence-playbook/
+
+Start with the [AI Act readiness spine](https://josediegorobles.github.io/ai-due-diligence-playbook/ai-act/) if you are preparing an EU AI Act review for an SME, CTO, investor, or AI vendor diligence process.
+
 This repository is for people who need to make real decisions about AI systems: CTOs, founders, investors, engineering leaders, security teams, and diligence advisors. It is intentionally opinionated. It favors evidence over demos, failure modes over vendor claims, and operational readiness over AI hype.
 
 ## What This Is
@@ -113,4 +119,3 @@ Good contributions are specific, testable, and grounded in real review work. Wea
 ## License
 
 MIT. Use it, fork it, adapt it, and improve it.
-
