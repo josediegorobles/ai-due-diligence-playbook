@@ -49,8 +49,8 @@ Use the playbook when you need to answer one question:
 | [AI Project Risk Assessment](checklists/ai-project-risk-assessment.md) | You need to decide if an AI initiative should proceed, pause, or be redesigned. |
 | [LLM Application Review Checklist](checklists/llm-application-review-checklist.md) | You are reviewing an LLM-powered product, internal tool, copilot, or workflow. |
 | [RAG System Review Checklist](checklists/rag-system-review-checklist.md) | You are evaluating retrieval quality, source control, answer grounding, and data leakage risk. |
-| [AI Vendor Evaluation Template](template-library/ai-vendor-evaluation-template.md) | You are assessing a third-party AI vendor before purchase, partnership, or investment. |
-| [AI Technical Due Diligence Report Template](template-library/ai-technical-due-diligence-report-template.md) | You need a senior-level diligence report format for acquisition or investment review. |
+| [AI Vendor Evaluation Template](templates/ai-vendor-evaluation-template.md) | You are assessing a third-party AI vendor before purchase, partnership, or investment. |
+| [AI Technical Due Diligence Report Template](templates/ai-technical-due-diligence-report-template.md) | You need a senior-level diligence report format for acquisition or investment review. |
 
 ## Review Philosophy
 

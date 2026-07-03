@@ -31,6 +31,14 @@ Contributions are welcome if they make AI due diligence more practical, precise,
 - Assume the reader is busy and senior.
 - Do not make legal claims without sources and caveats.
 
+## Language Policy
+
+- English is the canonical language for the full playbook.
+- Spanish pages exist only for the index, the AI Act spine, and the AI Act readiness checklist.
+- Do not add Spanish variants for other pages unless the language policy changes first.
+- Non-Spanish pages are EN-only by design.
+- Keep any Spanish regulatory text provisional unless reviewed by qualified counsel.
+
 ## Pull Request Checklist
 
 - [ ] The contribution fits the repository scope.
@@ -38,4 +46,3 @@ Contributions are welcome if they make AI due diligence more practical, precise,
 - [ ] Any regulatory claims include official or primary sources.
 - [ ] The contribution avoids vendor-specific promotion.
 - [ ] The contribution improves decision quality.
-

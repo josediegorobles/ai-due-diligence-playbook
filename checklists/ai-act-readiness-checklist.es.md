@@ -55,5 +55,3 @@ description: Esqueleto provisional en español para preparar una revisión de AI
 | Sistema | Rol | Clasificación | Obligaciones clave | Estado de evidencia | Responsable | Próxima acción |
 | --- | --- | --- | --- | --- | --- | --- |
 |  |  |  |  | Faltante / parcial / listo |  |  |
-
---8<-- "_includes/cta.md"

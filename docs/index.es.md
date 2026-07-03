@@ -16,7 +16,7 @@ Checklists, plantillas y marcos prácticos para decidir si un sistema de IA es s
 | --- | --- |
 | PYMEs españolas | [AI Act Readiness Checklist](checklists/ai-act-readiness-checklist.md) |
 | CTOs | [LLM Application Review Checklist](checklists/llm-application-review-checklist.md) |
-| Inversores | [AI Technical Due Diligence Report Template](template-library/ai-technical-due-diligence-report-template.md) |
+| Inversores | [AI Technical Due Diligence Report Template](templates/ai-technical-due-diligence-report-template.md) |
 | Compliance AI Act | [Mapa AI Act](ai-act/index.md) |
 
 --8<-- "_includes/cta.md"

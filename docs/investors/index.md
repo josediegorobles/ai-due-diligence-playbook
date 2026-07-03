@@ -9,8 +9,8 @@ AI claims can inflate a roadmap, a valuation, or an acquisition narrative. Dilig
 
 ## Recommended Path
 
-1. [AI Technical Due Diligence Report Template](../template-library/ai-technical-due-diligence-report-template.md): structure the review and investment decision.
-2. [AI Vendor Evaluation Template](../template-library/ai-vendor-evaluation-template.md): request evidence for vendor, data, model, and operational claims.
+1. [AI Technical Due Diligence Report Template](../templates/ai-technical-due-diligence-report-template.md): structure the review and investment decision.
+2. [AI Vendor Evaluation Template](../templates/ai-vendor-evaluation-template.md): request evidence for vendor, data, model, and operational claims.
 3. [Acquisition Review of an LLM Support Tool](../case-studies/acquisition-review-llm-support-tool.md): see a fictional acquisition review pattern.
 4. [AI Due Diligence Risk Model](../frameworks/ai-due-diligence-risk-model.md): score risk in a way that maps to deal terms and remediation.
 5. [Example AI Risk Register](../examples/example-risk-register.md): track findings, severity, owner, and required actions.

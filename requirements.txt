@@ -1,2 +1,3 @@
 mkdocs-material[imaging]==9.7.6
+mkdocs-redirects==1.2.2
 mkdocs-static-i18n==1.3.1

@@ -36,5 +36,40 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Generate docs from canonical sources
+        run: python scripts/sync-docs.py --write
+
+      - name: Verify generated docs match canonical sources
+        run: python scripts/sync-docs.py --check
+
+      - name: Build site
+        run: python -m mkdocs build --strict
+
+      - name: Prepare lychee local site root
+        run: |
+          root="$RUNNER_TEMP/lychee-root"
+          mkdir -p "$root"
+          ln -s "$GITHUB_WORKSPACE/site" "$root/ai-due-diligence-playbook"
+          echo "LYCHEE_ROOT=$root" >> "$GITHUB_ENV"
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --verbose
+            --root-dir "${{ env.LYCHEE_ROOT }}"
+            --accept 200,204,206,429
+            --exclude "https://calendly.com/.*"
+            --exclude "https://eur-lex\.europa\.eu/.*"
+            --remap "^https://josediegorobles\.github\.io/ai-due-diligence-playbook/(.*) file://${{ github.workspace }}/site/\$1"
+            './site/**/*.html'
+          fail: true
+
+      - name: Verify build leaves no tracked or unexpected untracked changes
+        run: |
+          git status --short --untracked-files=all
+          test -z "$(git status --short --untracked-files=all)"
+
       - name: Deploy to GitHub Pages
         run: python -m mkdocs gh-deploy --force --clean --verbose

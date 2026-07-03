@@ -38,6 +38,10 @@ theme:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        template-library/ai-technical-due-diligence-report-template.md: https://josediegorobles.github.io/ai-due-diligence-playbook/templates/ai-technical-due-diligence-report-template/
+        template-library/ai-vendor-evaluation-template.md: https://josediegorobles.github.io/ai-due-diligence-playbook/templates/ai-vendor-evaluation-template/
   - social:
       enabled: !ENV [CI, false]
   - i18n:
@@ -66,6 +70,9 @@ plugins:
             Examples: Ejemplos
             Case Studies: Casos
 
+hooks:
+  - scripts/sync-docs.py
+
 nav:
   - Home: index.md
   - For SMEs / Para PYMEs: smes/index.md
@@ -73,9 +80,6 @@ nav:
   - For Investors: investors/index.md
   - AI Act Compliance:
       - AI Act Spine: ai-act/index.md
-      - AI Act Readiness Checklist: checklists/ai-act-readiness-checklist.md
-      - AI Governance Checklist: checklists/ai-governance-checklist.md
-      - AI Project Risk Assessment: checklists/ai-project-risk-assessment.md
   - Checklists:
       - AI Project Risk Assessment: checklists/ai-project-risk-assessment.md
       - LLM Application Review Checklist: checklists/llm-application-review-checklist.md
@@ -84,8 +88,8 @@ nav:
       - AI Act Readiness Checklist: checklists/ai-act-readiness-checklist.md
       - AI Security Review Checklist: checklists/ai-security-review-checklist.md
   - Templates:
-      - AI Vendor Evaluation Template: template-library/ai-vendor-evaluation-template.md
-      - AI Technical Due Diligence Report Template: template-library/ai-technical-due-diligence-report-template.md
+      - AI Vendor Evaluation Template: templates/ai-vendor-evaluation-template.md
+      - AI Technical Due Diligence Report Template: templates/ai-technical-due-diligence-report-template.md
   - Frameworks:
       - AI Due Diligence Risk Model: frameworks/ai-due-diligence-risk-model.md
   - Examples:

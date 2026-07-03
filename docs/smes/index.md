@@ -14,7 +14,7 @@ Start here if your organization is adopting AI internally, embedding AI in a pro
 1. [AI Act Readiness Checklist](../checklists/ai-act-readiness-checklist.md): map scope, roles, classification, transparency duties, and evidence gaps.
 2. [AI Governance Checklist](../checklists/ai-governance-checklist.md): assign owners, approval gates, monitoring, incident paths, and evidence retention.
 3. [AI Project Risk Assessment](../checklists/ai-project-risk-assessment.md): decide whether a project should proceed, pause, or be redesigned.
-4. [AI Vendor Evaluation Template](../template-library/ai-vendor-evaluation-template.md): request evidence before buying AI tooling.
+4. [AI Vendor Evaluation Template](../templates/ai-vendor-evaluation-template.md): request evidence before buying AI tooling.
 5. [Example AI Risk Register](../examples/example-risk-register.md): track gaps in a format that leadership can understand.
 
 ## Useful First Outputs
