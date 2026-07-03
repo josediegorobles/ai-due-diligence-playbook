@@ -5,6 +5,9 @@ node_modules/
 dist/
 site/
 .cache/
+__pycache__/
+*.py[cod]
+lychee/
 
 # Generated from root-level canonical content by scripts/sync-docs.py.
 docs/case-studies/
