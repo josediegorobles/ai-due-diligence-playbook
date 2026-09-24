@@ -121,3 +121,7 @@ Good contributions are specific, testable, and grounded in real review work. Wea
 ## License
 
 MIT. Use it, fork it, adapt it, and improve it.
+
+---
+
+Servicio relacionado: https://josedrobles.com/es/ia-privada/
