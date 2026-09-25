@@ -124,4 +124,4 @@ MIT. Use it, fork it, adapt it, and improve it.
 
 ---
 
-Servicio relacionado: https://josedrobles.com/es/ia-privada/
+Part of: IA privada: diagnóstico y estudio de viabilidad — validate whether a document workflow under data restrictions can run on private AI before committing to production — https://josedrobles.com/es/ia-privada/
